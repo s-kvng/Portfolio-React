@@ -3,18 +3,23 @@ import {BrowserRouter , Routes , Route} from 'react-router-dom';
 import logo from './assets/logo.svg';
 import Header from './components/Header';
 import Profile from './pages/Profile';
+import Projects from './pages/Projects';
+import PageNotFound from './pages/PageNotFound';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       
-      <Header logo={logo} />
+      
 
     <BrowserRouter>
-
+    <Header logo={logo} />
     <Routes>
       <Route path='/' element={<Profile userName="s-kvng" />} />
+      <Route path='/projects' element={<Projects userName='s-kvng' />} />
+      <Route path='*' element={<PageNotFound />} />
     </Routes>
 
     </BrowserRouter>

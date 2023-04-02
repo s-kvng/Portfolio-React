@@ -2,6 +2,7 @@ import './List.css';
 
 function List({items}){
 
+    console.log(items);
     return (
 
         <ul>

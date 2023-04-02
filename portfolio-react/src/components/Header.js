@@ -1,5 +1,5 @@
 import "./Header.css";
-import Link from "./Link";
+
 
 
 function Header(props){
@@ -9,15 +9,13 @@ function Header(props){
       
         <header className="App-header">
           <img src={props.logo} className="App-logo" alt="logo" />
-          <p>
+          {/* <p>
             Edit <code>src/App.js</code> and save to reload.
-          </p>
+          </p> */}
          
-         <Link 
+          <h1>My Portfolio</h1>
 
-            url = "https://reactjs.org"
-            title= "Learn React"
-         />
+      
         </header>
       
     )

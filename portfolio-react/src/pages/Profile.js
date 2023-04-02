@@ -16,7 +16,7 @@ function Profile({ userName }) {
             const data = await fetch(`https://api.github.com/users/${userName}`);
             const results = await data.json();
 
-            console.log(results);
+            
             if (results) {
                 setProfile(results);
                 setLoading(false);
@@ -26,6 +26,7 @@ function Profile({ userName }) {
         fetchData();
     }, [userName]);
 
+    
 
     const items = [
         {
